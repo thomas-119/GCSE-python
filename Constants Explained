@@ -1,0 +1,17 @@
+#Constants Explained
+
+#Variables have values that CAN change
+#Constants have vaules that CANNOT change
+#Variables are written in lower case
+#Constants are written in FULL CAPS!
+
+#Example of a constant:
+FREE_THROW = 1 # <-- A free throw is ALWAYS 1 point
+THREE_POINTER = 3
+PI = 3.141592653...
+
+#Definition:
+#A constant is a named location
+#In a computers memory
+#That stores a value
+#that value SHOULD NOT be changed
