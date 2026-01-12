@@ -1,0 +1,14 @@
+#Input Explained
+#Input is another function
+#Here aare examples:
+name = str(input("Enter Name: ")) # <--- Casting for String
+print("Your Name is:", name)
+
+age = int(input("Enter Age: ")) # <--- Casting for Integer
+print("You are", age, "years old")
+
+fav_float = float(input("What's your favourite float? ")) # <--- Casting for Float
+print(fav_float , "is a good float")
+
+fav_colour = str(input("What's your favourite colour? ")) # <--- Casting for String
+print(fav_colour , "is a good colour!")
