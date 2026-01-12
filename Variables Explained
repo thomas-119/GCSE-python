@@ -1,0 +1,33 @@
+#Variables Explained
+
+#Variables Definition:
+#A named location
+#in a computers memory
+#That stores a value
+#and the value can change
+
+#Example:
+name = "Thomas" # <-- this is a variable
+#The variable is called "name"
+#The variable contains a value, "Thomas"
+
+#More Examples:
+age = 15
+favourite_team = "Palace"
+favourite_colour = "Blue"
+float_num = 2.587
+boolean = True
+
+#CRIBS Variables:
+character = "%"
+realFloat = 4.8
+integer = 3
+boolean = False
+string = "Hello World!"
+
+#How to display variables:
+print("This is a character:", character)
+print("This is a float:", realFloat)
+print("This is a integer:", integer)
+print("This is a boolean:", boolean)
+print("This is a string:", string)
