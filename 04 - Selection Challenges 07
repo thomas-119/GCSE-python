@@ -1,0 +1,7 @@
+numb = int(input("Choose a number: "))
+if numb < 10:
+    print("Too Low")
+elif numb >= 10 and numb <= 20:
+    print("correct")
+else:
+    print("too high you crazy pizza pie")
