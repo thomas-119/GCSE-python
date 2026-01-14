@@ -1,0 +1,7 @@
+numb1 = int(input("Choose a number"))
+numb2 = int(input("Choose another number"))
+
+if numb1 > numb2:
+    print(numb2, numb1)
+else:
+    print(numb1, numb2)
