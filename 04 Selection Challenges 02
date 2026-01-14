@@ -1,0 +1,6 @@
+numb = int(input("Choose a number under 20"))
+if numb >= 20:
+    print("Too High")
+else:
+    print("Thank You!")
+ 
