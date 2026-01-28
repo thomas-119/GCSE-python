@@ -1,0 +1,11 @@
+direct = input("Do you want to count up or down? u/d ")
+if direct == "u":
+    topnumb = int(input("Choose a number"))
+    for i in range(1, topnumb+1):
+        print(i)
+elif direct == "d":
+    numb = int(input("Choose a number below 20"))
+    for i in range(20, numb-1, -1):
+        print(i)
+else:
+    print("I don't understand")
