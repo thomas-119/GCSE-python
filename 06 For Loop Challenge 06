@@ -1,0 +1,8 @@
+total = 0
+for i in range(5):
+    numb = int(input("Choose a number"))
+    choice = input("Do you want this number to be added? y/n").lower()
+    if choice == "y":
+        total = total + numb
+    
+print(total)
