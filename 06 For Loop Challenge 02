@@ -1,0 +1,4 @@
+name = input("What's your name?")
+numb = int(input("Please enter a number"))
+for i in range(numb):
+    print(name)
