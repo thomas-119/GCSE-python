@@ -1,0 +1,12 @@
+control = True
+count = 0
+while control == True:
+    name = input("Who would you like to invite? ")
+    print("{} has been invited".format(name))
+    count = count + 1
+    ans = input("Would you like to invite anyone else? y/n ").lower()
+    if ans == "n":
+        control = False
+
+print("You have invited {} people".format(count))
+
