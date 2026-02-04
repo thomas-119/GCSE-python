@@ -1,0 +1,20 @@
+compnum = 50
+ans = int(input("Please guess a number"))
+count = 1
+while ans != compnum:
+    if ans > compnum:
+        print("Too high")
+    elif ans < compnum:
+        print("Too Low")
+        
+    another = input("Do you want another guess?? y/n")
+    if another == "n":
+        break
+    ans = int(input("Please guess a number"))
+    count = count + 1
+    
+if ans == compnum:
+    print("Well done you took {} attempts".format(count))
+else:
+    print("You couldn't guess the number. Better luck next time")
+    
