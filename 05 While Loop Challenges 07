@@ -1,0 +1,11 @@
+numb = 10
+while numb != 0:
+    print("There are {0} green bottles hanging on the wall,".format(numb))
+    print("{0} green bottles hanging on the wall. And if one green bottle should accidently fall".format(numb))
+    bottles_left = int(input("How many bottles will be left"))
+    numb = numb -1 
+    while bottles_left != (numb):
+        print("Incorrect")
+        bottles_left = int(input("How many bottles will be left"))
+    print("They'll be {} green bottles hanging on the wall".format(bottles_left))
+print("They'll be no green bottles hanging non the wall")
