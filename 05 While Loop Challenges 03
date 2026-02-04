@@ -1,0 +1,11 @@
+numb = int(input("Enter a number "))
+total = numb
+letter = "y"
+
+while letter == "y":
+    numb2 = int(input("Enter another number "))
+    total = total + numb2
+    anwer = input("Do you want to add another number? y/n").lower()
+    if anwer == "n":
+        letter = "n"
+print(total)
