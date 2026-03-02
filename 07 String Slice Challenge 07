@@ -1,0 +1,7 @@
+name = input("Enter your first name")
+firname = name[0]
+vowels = ["a", "e", "i", "o", "u"]
+if firname in vowels:
+    name = ""
+
+print(name)
