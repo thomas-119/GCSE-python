@@ -1,0 +1,5 @@
+count = 0
+while True:
+    count = count + 1
+    lastname = input("Enter a last name")
+    print("Your code is: ", lastname[0:3]+str(count))
