@@ -1,0 +1,3 @@
+word = input("Enter any word")
+upperword = word.upper()
+print(upperword)
