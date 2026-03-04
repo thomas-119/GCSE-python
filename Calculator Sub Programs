@@ -1,0 +1,30 @@
+def add():
+    answer = num1 + num2
+    return answer
+
+
+def division():
+    answer = num1 / num2
+    return answer
+
+def multiply():
+    answer = num1 * num2
+    return answer
+
+def sub():
+    answer = num1 - num2
+    return answer
+
+num1 = int(input("Enter a number"))
+num2 = int(input("Enter another number"))
+select = input("Which operator do you want to use?? A/D/M/S ").upper()
+if select == "A":
+    print(add())
+elif select == "D":
+    print(division())
+elif select == "S":
+    print(sub())
+elif select == "M":
+    print(multiply())
+else:
+    print("That is not an operator")
