@@ -1,0 +1,69 @@
+#Selection challenge 01 (GCSECS.com)
+#Fix the lines of code below
+#Check for correct indentation
+#When fixed, the code should display…
+#... The sky is blue today
+
+skyColour = "blue"
+if skyColour == "blue":
+  print ("The sky is blue today")
+
+#Selection challenge 02 (GCSECS.com)
+#Fix the lines of code below
+#Check for correct indentation
+#Check the code is in the correct order
+#When fixed, the code should display…
+#... The sky is NOT blue
+
+skyColour = "purple"
+if skyColour == "blue":
+  print ("The sky is blue today")
+else:
+  print("The sky is NOT blue")
+
+#Selection challenge 03 (GCSECS.com)
+#Fix the lines of code below
+#Check for correct indentation
+#Check the code is in the correct order
+#Entering a 2 should display "you entered a 2"
+#Similar for entering a 3 or 4
+numEntered= int(input("Enter a 2, 3 or 4"))
+if numEntered == 2:
+  print("You entered a 2")
+elif numEntered == 3:
+  print("You entered a 3")
+else:
+    print("You entered a 4")
+
+#Selection challenge 04 (GCSECS.com)
+#Fix the lines of code below
+#Check for correct indentation
+#Check the code is in the correct order
+#When fixed, entering an integer e.g. 7...
+#...should display "Wow!"
+
+litter= int(input("How many puppies were born?"))
+if litter <=5:
+  print("5 or less is a good size")
+elif litter == 6:
+  print("6 is manageable")
+else:
+  print("wow!")
+
+#Selection challenge 05 (GCSECS.com)
+#Fix any syntax errors
+#Syntax error means missing : or ) etc
+#Fix any indentation errors
+#Put code in correct order
+#The code is for a taxi/coach company
+passengers= int(input("How many passengers?"))
+if passengers <=4:
+  print("send 4-seater car")
+
+elif passengers >4 and passengers <17:
+  print("send 16-seater")
+else:
+  print("send coach")
+
+
+
