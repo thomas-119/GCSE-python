@@ -1,0 +1,16 @@
+people = []
+people.append(input("Enter a name"))
+people.append(input("Enter a name"))
+people.append(input("Enter a name"))
+
+x = True
+while x == True:
+    choice = input("Do you want more people y/n")
+    if choice == "y":
+        people.append(input("Enter a name"))
+    else:
+        x = False
+print(len(people))
+
+
+    
