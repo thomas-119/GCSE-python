@@ -1,0 +1,225 @@
+#Random challenge1
+#The code below is meant to...
+#..generate a random integer..
+#..between zero and ten
+#Can you fix it?
+
+import random
+
+number = random.randint(0,10)
+print(number)
+#///////////////////////
+#Random challenge2
+#The code below is meant to...
+#..generate a random integer..
+#..generate another random integer..
+#Add the two interges together
+#Display the sum
+#Can you fix it?
+
+import random
+
+num1 = random.randint(0,10)
+num2 = random.randint(0,10)
+
+total = num1 + num1
+
+print(num1,"+",num2,"=",total)
+#//////////////////////
+#Random challenge3
+#The code below is meant to..
+#display a random times table..
+#Everytime you run the code.
+#Might be the 5 times table
+#Or the 3 times table
+#But, its got errors
+#Can you fix it?
+
+import random
+
+number = random.randint(1,12)
+
+for i in range(1,13):
+  print(i, "x", number, "=", i*number)
+#///////////////////////
+#Random challenge4
+#The code below is meant to..
+#generate an integer between 1 and 12
+#generate another integer between 1 and 12
+#Multiply them together
+#Ask the user to multiply them together
+#Check if the user got the right answer
+#But, its got errors
+#Can you fix it?
+
+import random
+
+num1 = random.randint(1,12)
+num2 = random.randint(1,12)
+
+total = num1 * num2
+
+num1 = str(num1)
+num2 = str(num2)
+
+answer = int(input("What is "+num1+" x "+num2+">>>"))
+if total == answer:
+  print("correct!")
+else: 
+  print("incorrect!")
+#/////////////////////////
+#Random challenge5
+#generate an integer between 1 and 12
+#generate another integer between 1 and 12
+#Multiply them together
+#Ask the user to multiply them together
+#Check if the user got the right answer
+#Repeat the above 5 times in total
+#Finally, display how many the user...
+#...got correct
+#But, its got errors
+#Can you fix it?
+
+import random
+
+correctAnswerCount = 0
+
+for i in range(5):
+    num1 = random.randint(1,12)
+    num2 = random.randint(1,12)
+
+    total = num1 * num2
+
+    num1 = str(num1)
+    num2 = str(num2)
+
+    answer = int(input("What is "+num1+" x "+num2+">>>"))
+    if total == answer:
+        print("correct!")
+        correctAnswerCount = correctAnswerCount +1
+    
+    else:
+      print("incorrect!")
+
+print("You got",correctAnswerCount,"/5")
+#////////////////////////////////
+#Random challenge6
+#write some code that is like a dice
+#the code says "spacebar to roll or...
+#...press x to exit"
+#You press the spacebar then enter..
+#It generates a number between 1 and 6
+#Then asks you the question again...
+#until you press "x" then enter and it stops
+
+import random
+s = True
+while s == True:
+  choice = input("Press enter to roll or x to exit")
+  if choice == "x":
+    s = False
+  else:
+    roll = random.randint(1,6)
+    print(roll)
+#//////////////////////////////////////
+#Random challenge7
+#The code below is a random..
+#...lottery number generator
+#There are no syntax errors..
+#But the code is in the wrong order
+#Can you fix it?
+
+
+num_lottery_numbers = 6
+lottery_numbers = []
+lottery_numbers.sort()
+
+import random
+
+
+while len(lottery_numbers) < num_lottery_numbers:
+    number = random.randint(1, 50)
+    if number not in lottery_numbers:
+        lottery_numbers.append(number)
+
+print("Your lottery numbers are:", lottery_numbers)
+#/////////////////////////////
+#Random challenge8
+#Create a "guess the number" game
+#Where a random number between...
+#..1 to 5 is generated and stored
+#The user must guess the number
+#If the user guesses too high, "too high" is displayed
+#If the user guesses too low, "too low" is displayed
+#while the number isn’t guessed, a user must guess
+#when the number is guessed a message is displayed
+#"it took you x times to guess"
+#where x is the number if user guesses
+
+import random
+
+number = random.randint(1,5)
+guess = int()
+x = 0
+while guess != number:
+  guess = int(input("Whats your guess"))
+  x = x + 1
+  if guess - number == 0:
+    print("You guessed right")
+  elif guess - number > 0:
+    print("Too high")
+  else:
+    print("Too Low")
+    
+print("Congrats it took you", x, "tries")
+#///////////////////////////////////
+#Random challenge9
+#Create a magic 8-ball!
+#Ask the user to type in a yes/no question
+#e.g. "Will I own a helicopter?"
+#Your code will randomly display one of 6 answers
+#e.g.yes/no/no chance/one day etc
+
+import random
+options = ["yes", "one day", "no", "maybe", "no chance", "never ever"]
+
+question = input("This is a magic 8-ball: Enter a yes or no question")
+print(random.choice(options))
+#//////////////////////////////////
+#Random challenge10
+#run the code below
+#it is part of rock/paper/scissors
+#it works, but it needs more developing
+#Can you ask the user to enter rock or papers etc
+#Can the game display a random choice too
+#Can the game tell you if the user won
+#Can the game keep score of wins..
+#..for both the user and computer
+
+import random
+s = True
+score = 0
+compscore = 0
+print("You get 1 point for a win, 0 for a draw and -1 for a loss")
+while s == True:
+  weapons = ["rock", "paper", "scissors"]
+  selected = random.choice(weapons)
+  choice = input("Choose 'Rock', 'paper' or 'scissors").lower()
+  print("The computer chose", selected)
+  print("You chose", choice)
+  if selected == choice:
+    print("No-one won")
+  elif (selected == "rock" and choice == "paper") or (selected == "paper" and choice == "scissors") or (selected == "scissors" and choice == "rock"):
+    print("You Won")
+    score = score + 1
+    compscore = compscore - 1
+  else:
+    print("You lost")
+    score = score - 1
+    compscore = compscore + 1
+  contin = input("Press x to exit or anything else to continue")
+  if contin == "x":
+    s = False
+
+print("You got", score)
+print("The computer got", compscore)
