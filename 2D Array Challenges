@@ -1,0 +1,34 @@
+#01
+MySpaceCompany = []
+print(MySpaceCompany)
+for i in range(3):
+    MySpaceCompany.append(input("Enter a type of space vehicle"))
+
+print(MySpaceCompany)
+
+#02
+MySpaceCompany = ["Rocket Pack", "Moon Base", "Moon buggy"]
+print(MySpaceCompany)
+MySpaceCompany[0] = "Rich people going to Mars"
+print(MySpaceCompany)
+MySpaceCompany[1] = "Rich people going to the moon"
+print(MySpaceCompany)
+
+#03
+Stuff = [["1","2","3","4"],["a","b","c","d"], ["I","II","III","IV"]]
+print(Stuff)
+
+Stuff[1][2] = "Croydon"
+
+print(Stuff)
+
+#04
+OuterArray = []
+InnerArray1 = []
+InnerArray2 = []
+print(OuterArray)
+OuterArray.append(InnerArray1)
+OuterArray.append(InnerArray2)
+print(OuterArray)
+
+#05
