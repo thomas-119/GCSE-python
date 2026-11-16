@@ -1,0 +1,134 @@
+#String slicing challenge1
+#The code below is meant to..
+#..display just "Ali"
+#test it then fix it
+
+boxer = "Muhammad Ali"
+surname = boxer[9:12]
+print(surname)
+#-----------------------------------------------------------
+#String slicing challenge2
+#The code below is meant to..
+#..display just "Ali"
+#test it then fix it
+
+boxer = "Muhammad Ali"
+surname = boxer[-3:]
+print(surname)
+#-----------------------------------------------------------
+#String slicing challenge3
+#The following code it meant...
+#..display the number of characters..
+#..in the boxer's name..i.e. 12
+#..(including the space)
+#Can you fix it?
+
+boxer = "muhammad Ali"
+length = len(boxer)
+print(length)
+#-----------------------------------------------------------
+#String slicing challenge4
+#The following code it meant...
+#..display the first name and..
+#..surname on separate lines
+#Can you fix it?
+
+boxer = "Muhammad Ali"
+firstName = boxer[0:8]
+surname = boxer[9:12]
+print(firstName)
+print(surname)
+#-----------------------------------------------------------
+#String slicing challenge5
+#The following code it meant...
+#..display "Muhammad THE GOAT Ali"
+#run it then fix it
+
+boxer = "Muhammad Ali"
+status = " THE GOAT "
+firstName = boxer[0:8]
+surname = boxer[9:12]
+print(firstName + status + surname)
+#-----------------------------------------------------------
+#String slicing challenge6
+#The code below asks a user to..
+#..enter their first name and..
+#..then tells them the first letter
+#Its not working, can you fix it?
+
+name = str(input("Enter your first name>>>"))
+letter = name[0]
+print("Your name begins with", letter)
+#-----------------------------------------------------------
+#String slicing challenge7
+#The code below asks a user to..
+#..enter their first name and..
+#..then tells them the first letter
+#..and the last letter of their name
+#Its not working, can you fix it?
+
+name = str(input("Enter your first name>>>"))
+firstLetter = name[0]
+lastLetter = name[-1:]
+print("Your name begins with", firstLetter)
+print("Your name ends with", lastLetter)
+#-----------------------------------------------------------
+#String slicing challenge8
+#The code below is meant to..
+#..slice out THE CHAMP and..
+#..display it (only)
+#Can you fix it?
+
+boxer = "Muhammad THE CHAMP Ali"
+nickname = boxer[9:18]
+print(nickname)
+#-----------------------------------------------------------
+#String slicing challenge9
+#The code below allows a user..
+#to enter a UK mobile number..
+#..that starts with a zero.
+#If it does, the code converts..
+#..the number entered to the..
+#..international code +44.
+#e.g. 07956111222 becomes..
+#..+447945111222.
+#But it doesn't work.
+#Can you fix it?
+
+ukNumber = input("enter UK number>>>")
+
+preFix = "+44"
+
+if ukNumber[0] == "0":
+  ukNumber = ukNumber[1:]
+  ukNumber = preFix + ukNumber
+  print("International: ",ukNumber)
+  
+
+else:
+  print("Not recognised")
+#-----------------------------------------------------------
+#String slicing challenge10
+#Write some code that asks a user..
+#..to enter their first name..
+#..then to enter their last name..
+#..then to enter a nick name.
+#It then displays the number of characters..
+#..in the first name, then last name
+#..then displays the whole name back
+#..with the nick name in the middle
+
+firstname = str(input("enter your first name "))
+surname = str(input("Enter your surname "))
+nickname = str(input("Enter your nickname "))
+
+print(len(firstname))
+print(len(surname))
+print(firstname, nickname, surname)
+
+
+
+
+
+
+
